@@ -1,0 +1,35 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 9px;
+    background-color: rgb(170, 123, 182);
+    width: 35%;
+    margin: 5% auto 0 auto
+}
+
+.grid-item {
+    aspect-ratio: 1;
+    background-color:  rgb(40, 136, 141);
+    text-align: center;
+}
+.center{
+    position: relative;
+    top: 20px;
+    font-size: 40px;
+    color: burlywood;
+    margin-top: 35px;
+    text-align: center;
+}
+.X{
+    color: rgb(204, 174, 96);
+    font-size: 5cm;
+    width: 100%;
+}
+.O{
+    color:  rgb(204, 174, 96);
+    font-size: 5cm;
+    width: 100%;
+}
+.backcolor{
+    background-color: rgb(40, 136, 141); ;
+}
