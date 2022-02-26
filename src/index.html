@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tris 😊</title>
-    <link rel="stylesheet" href="tris.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="backcolor">
-        <div class="center"><h1>TIC TAC TOE</h1></div>
+    <div class="center">
+        <h1>TIC TAC TOE</h1>
+    </div>
     <div class="grid-container">
-        <div class="grid-item"onclick="play(0,0)"><span></span></div>
-        <div class="grid-item"onclick="play(0,1)"><span></span></div>
-        <div class="grid-item"onclick="play(0,2)"><div class="cross">
-            <div class="line" id="line-a"></div>
-            <div class="line" id="line-b"></div>
-        </div></div>
-        <div class="grid-item"onclick="play(1,0)"><span></span></div>
-        <div class="grid-item"onclick="play(1,1)"><span><div class="circle"></div></span></div>
-        <div class="grid-item"onclick="play(1,2)"><span></span></div>
-        <div class="grid-item"onclick="play(2,0)"><span></span></div>
-        <div class="grid-item"onclick="play(2,1)"><span></span></div>
-        <div class="grid-item"onclick="play(2,2)"><span></span></div>
-      </div>
-      <center><span style='font-size: 100px;color: darkgoldenrod;'>&#10140;</span></center>
-</div>
- <script src="script.js"></script>
+        <div class="grid-item" onclick="play(0,0)"><span></span></div>
+        <div class="grid-item" onclick="play(0,1)"><span></span></div>
+        <div class="grid-item" onclick="play(0,2)">
+            <div class="cross">
+                <div class="line" id="line-a"></div>
+                <div class="line" id="line-b"></div>
+            </div>
+        </div>
+        <div class="grid-item" onclick="play(1,0)"><span></span></div>
+        <div class="grid-item" onclick="play(1,1)"><span>
+                <div class="circle"></div>
+            </span></div>
+        <div class="grid-item" onclick="play(1,2)"><span></span></div>
+        <div class="grid-item" onclick="play(2,0)"><span></span></div>
+        <div class="grid-item" onclick="play(2,1)"><span></span></div>
+        <div class="grid-item" onclick="play(2,2)"><span></span></div>
+    </div>
+    <div id="arrow-container"><span id="arrow">&#10140;</span></div>
+    <script src="script.js"></script>
 </body>
+
 </html>

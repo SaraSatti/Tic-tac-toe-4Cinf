@@ -9,19 +9,21 @@
 
 .grid-item {
     aspect-ratio: 1;
-    background-color:  rgb(40, 136, 141);
-    text-align: center;
+    background-color: rgb(40, 136, 141);
+    /* Add overflow:hidden to be sure that aspect ratio is always 1, no matter the content */
+    overflow: hidden;
 }
-.center{
-    position: relative;
+
+.center {
     top: 20px;
     font-size: 40px;
     color: burlywood;
     margin-top: 35px;
     text-align: center;
 }
-.backcolor{
-    background-color: rgb(40, 136, 141); ;
+
+body {
+    background-color: rgb(40, 136, 141);
 }
 
 .line {
@@ -36,26 +38,36 @@
 }
 
 #line-a {
-    background-color:  rgb(204, 174, 96);
+    background-color: rgb(204, 174, 96);
     width: 220px;
     height: 10px;
     transform: rotate(45deg);
+    border-radius: 5px;
 }
 
 #line-b {
-    background-color:  rgb(204, 174, 96);
+    background-color: rgb(204, 174, 96);
     width: 220px;
     height: 10px;
     transform: translateY(-100%) rotate(-45deg);
-
+    border-radius: 5px;
 }
 
 .circle {
-    margin-left: 19px ;
-    margin-top: 20px;
     border-radius: 50%;
-    border:rgb(40, 136, 141); 2px solid;
-    background-color:  rgb(204, 174, 96);
-    width: 200px;
-    height: 200px;
+    border:  rgb(204, 174, 96) 10px solid;
+    background-color: rgb(40, 136, 141);
+    width: 80%;
+    height: 80%;
+    margin: 50% auto 0 auto;
+    transform: translateY(-50%);
 }
+
+#arrow-container {
+    text-align: center;
+}
+#arrow {
+    font-size: 100px;
+    color: darkgoldenrod;
+}
+
