@@ -1,0 +1,20 @@
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 12px 1fr 12px 1fr;
+  grid-template-rows: 1fr 12px 1fr 12px 1fr;
+  width: 80%;
+  max-width: 1800px;
+  min-width: 600px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.board-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    background-color: purple;
+}
+
+.gap-item {
+    background-color: orange;
+}
